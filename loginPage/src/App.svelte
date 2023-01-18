@@ -11,10 +11,17 @@
 		people = people.filter((person) => person.id != id)
 		console.log(e)
 	}
+
+	let showModal = false
+	
+	const openModal = () => {
+		showModal = !showModal
+	}
 </script>
 
-<Modal/>
+<Modal message="Hello There" isPromo = {true} showModal = {showModal} on:click={openModal}/>
 <main>
+	<button on:click={openModal}> Show Modal</button>
 	{#each people as person (person.id)}
 		<div>
 			<h4>{person.name}</h4>

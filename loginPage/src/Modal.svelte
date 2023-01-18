@@ -1,20 +1,19 @@
 <script>
-    let showModal = true
-    let isPromo = true
+    export let message = "Sign UP"
+    export let showModal = false
+    export let isPromo = false
 </script>
 
 {#if showModal}
-<div class="backdrop">
     <!-- conditional assigning style class  -->
-    <div class="backdrop" class:promo={isPromo}>
+    <div class="backdrop" class:promo={isPromo} on:click>
         <div class="modal">
-          <p>Sign up for offers!</p>
+          <p>{message}</p>
         </div>
-      </div>
-</div>
+    </div>
 {/if}
 
-
+  
 <style>
   .backdrop{
     width: 100%;
