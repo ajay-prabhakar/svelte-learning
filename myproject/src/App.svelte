@@ -1,6 +1,11 @@
 <script>
-	let  name = 'Yoshi'
+	let  firstName = 'Yoshi'
+	let  lastName = 'Yoshi'
+
 	let beltcolor = "black"
+	$: fullName = `${firstName} ${lastName}`
+
+	var name = firstName + lastName
 
 	const handleClick = () => {
 		beltcolor = 'orange'
@@ -16,6 +21,10 @@
 	<p>Visit this fuck {beltcolor}.</p>
 	<button on:click={handleClick}>This is belt color</button>
 	<!-- <input type="text" on:input={handleInput} value={beltcolor}> -->
+
+	<input type="text" bind:value={firstName}>
+	<input type="text" bind:value={lastName}>
+
 	<input type="text" bind:value={beltcolor}>
 </main>
 
