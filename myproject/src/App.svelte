@@ -10,14 +10,28 @@
 		people = people.filter((person) => person.id != id)
 		console.log(e)
 	}
+
+	let age = 15
 </script>
+
+
+{#if age > 20}
+	<p>The age is greater than 20</p>
+	{:else if age >5}
+	<p>age is greater than 5</p>
+	{:else}
+	<p>age is below 5</p>
+{/if}
 
 <main>
 	{#each people as person (person.id)}
 		<div>
 			<h4>{person.name}</h4>
+			{#if person.beltColour === 'black'}
+				<h4><strong>Strongest Ninja</strong></h4>
+			{/if}
 			<p>{person.age} years old, {person.beltColour} belt.</p>
-			
+
 			<!-- on click if we directly call the fuction till will excute in runtime so making () => works  -->
 			<button on:click={(e) => handleClick(e, person.id)}> Delete </button>
 		</div>
