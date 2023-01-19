@@ -1,5 +1,6 @@
 <script>
 	import Modal from "./Modal.svelte";
+	import AddPerson from "./AddPerson.svelte";
 
 	let people = [
     { name: 'yoshi', beltColour: 'black', age: 25, id: 1 },
@@ -19,7 +20,12 @@
 	}
 </script>
 
-<Modal message="Hello There" isPromo = {true} showModal = {showModal} on:click={openModal}/>
+<Modal message="Hello There" isPromo = {true} showModal = {showModal} on:click={openModal}>
+	<AddPerson></AddPerson>
+</Modal>
+
+
+
 <main>
 	<button on:click={openModal}> Show Modal</button>
 	{#each people as person (person.id)}
