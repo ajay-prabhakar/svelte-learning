@@ -1,9 +1,13 @@
 <script>
+	import Header from "./Components/Header.svelte";
+	import Footer from "./Components/Footer.svelte";
 </script>
 
+<Header></Header>
 <main>
-	<h1>Ninjas</h1>
+	<h1>Hello, Ninjas</h1>
 </main>
+<Footer></Footer>
 
 <style>
 	main {
