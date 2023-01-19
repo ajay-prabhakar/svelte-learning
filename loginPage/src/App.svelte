@@ -18,10 +18,15 @@
 	const openModal = () => {
 		showModal = !showModal
 	}
+
+	const addPerson = (e) => {
+		people = [e.detail, ...people]
+		showModal = false
+	}
 </script>
 
 <Modal message="Hello There" isPromo = {true} showModal = {showModal} on:click={openModal}>
-	<AddPerson></AddPerson>
+	<AddPerson on:addPerson={addPerson}></AddPerson>
 </Modal>
 
 
