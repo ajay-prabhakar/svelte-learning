@@ -7,7 +7,7 @@
 </footer>
 
 <style>
-    footer{
+    footer{ 
         padding: 40px;
         text-align: center;
     }
