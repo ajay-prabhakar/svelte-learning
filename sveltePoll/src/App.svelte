@@ -44,6 +44,7 @@
     };
 </script>
 
+
 <Header></Header>
 <main>
 	<Tabs {activeItem} {items} on:tabChange={tabChange}></Tabs>
@@ -52,7 +53,7 @@
 	{:else if activeItem === items[1]}
 	<CreatePollForm on:add = {addPoll}></CreatePollForm>
 	{/if}
-</main> 
+</main>
 <Footer></Footer>
 
 <style>
