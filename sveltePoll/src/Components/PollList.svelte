@@ -1,4 +1,5 @@
 <script>
+    import PollStore from '../Stores/PollStore.js`'
     import PollDetails from "./PollDetails.svelte";
     export let polls = [];
   </script>
@@ -12,9 +13,9 @@
   </div>
   
   <style>
-    .poll-list{
+    .poll-list{ 
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px;
     }
-  </style>
+  </style> 
