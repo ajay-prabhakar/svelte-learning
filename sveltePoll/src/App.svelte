@@ -13,7 +13,7 @@
 			id: 1, 
 			question: 'Phython or javaScript',
 			answerA: 'Phython',
-			answerb: 'JavaScript',
+			answerB: 'JavaScript',
 			votesA: 9, 
 			votesB: 15,
 		}
@@ -28,13 +28,27 @@
 		polls = [poll,...polls]
 		activeItem = items[0]
 	}
+
+	const handleVote = (e) => {
+		const { id, option } = e.detail;
+		
+		let copiedPolls = [...polls];
+		let upvotedPoll = copiedPolls.find(poll => poll.id == id);
+		if(option === 'a'){
+		upvotedPoll.votesA++;
+		}
+		if(option === 'b'){
+		upvotedPoll.votesB++;
+		}
+		polls = copiedPolls;
+    };
 </script>
 
 <Header></Header>
 <main>
 	<Tabs {activeItem} {items} on:tabChange={tabChange}></Tabs>
 	{#if activeItem=== items[0]}
-	<PollList {polls}></PollList>
+	<PollList {polls} on:vote = {handleVote}></PollList>
 	{:else if activeItem === items[1]}
 	<CreatePollForm on:add = {addPoll}></CreatePollForm>
 	{/if}
