@@ -1,1 +1,67 @@
-<h1 class="grid h-screen place-content-center text-8xl">Heading</h1>
+<body class="text-gray-700">
+	<div>
+		<div>
+			<nav>
+				<div>
+					<h1 class="font-bold uppercase p-4 border-b border-gray-100">
+						<a href="/">Food Ninja</a>
+					</h1>
+				</div>
+				<ul>
+					<li class="text-gray-700 font-bold">
+						<a href="#">
+							<span>Home</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>About</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Contact</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<main class="px-16 py-6">
+			<div>
+				<a href="#">Log in</a>
+				<a href="#">Sign up</a>
+			</div>
+
+			<header>
+				<h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
+				<h3 class="text-2xl font-semibold">For Ninjas</h3>
+			</header>
+
+			<div>
+				<h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+
+				<div class="mt-8">
+					<!-- cards go here -->
+					<div>
+						<img src="favicon.png" alt="stew" />
+						<div>
+							<span>5 Bean Chili Stew</span>
+							<span>Recipe by Mario</span>
+						</div>
+					</div>
+				</div>
+
+				<h4 class="font-bold mt-12 border-b border-gray-200">Most Popular</h4>
+
+				<div class="mt-8">
+					<!-- cards go here -->
+				</div>
+			</div>
+
+			<div>
+				<div>Load more</div>
+			</div>
+		</main>
+	</div>
+</body>
