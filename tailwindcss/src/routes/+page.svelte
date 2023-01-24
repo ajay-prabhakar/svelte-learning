@@ -1,4 +1,4 @@
-<body class="text-gray-700">
+<body class="text-gray-600 font-body">
 	<div>
 		<div>
 			<nav>
@@ -28,7 +28,7 @@
 		</div>
 
 		<main class="px-16 py-6">
-			<div class="flex justify-end">
+			<div class="flex justify-center md:justify-end">
 				<a href="#" class="text-primary">Log in</a>
 				<a href="#" class="text-primary ml-2">Sign up</a>
 			</div>
@@ -39,28 +39,33 @@
 			</header>
 
 			<div>
-				<h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+				<h4 class="font-bold pb-2 mt-12 border-b border-gray-200">Latest Recipes</h4>
 
 				<div class="mt-8">
 					<!-- cards go here -->
-					<div>
-						<img src="favicon.png" alt="stew" />
-						<div>
-							<span>5 Bean Chili Stew</span>
-							<span>Recipe by Mario</span>
+					<div class="rounded bg-white border-gray-200 shadow-md overflow-hidden relative">
+						<img src="favicon.png" alt="stew" class="h-32 sm:h-48 w-full object-cover" />
+						<div class="m-4">
+							<span class="font-bold">5 Bean Chili Stew</span>
+							<span class="block text-gray-500 text-sm">Recipe by Mario</span>
+						</div>
+						<div
+							class="absolute top-0 ml-2 mt-2 p-2 bg-secondary-100 text-secondary-200 text-xs uppercase font-bold rounded-full"
+						>
+							<span>25 mins</span>
 						</div>
 					</div>
 				</div>
 
-				<h4 class="font-bold mt-12 border-b border-gray-200">Most Popular</h4>
+				<h4 class="font-bold pb-2 mt-12 border-b border-gray-200">Most Popular</h4>
 
 				<div class="mt-8">
 					<!-- cards go here -->
 				</div>
 			</div>
 
-			<div class="flex justify-center">
-				<div class="bg-secondary-100 text-secondary-200 p-2">Load more</div>
+			<div class="mt-12 flex justify-center">
+				<div class="bg-secondary-100 text-secondary-200">Load more</div>
 			</div>
 		</main>
 	</div>
