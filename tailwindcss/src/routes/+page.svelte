@@ -28,9 +28,9 @@
 		</div>
 
 		<main class="px-16 py-6">
-			<div>
+			<div class="flex justify-end">
 				<a href="#" class="text-primary">Log in</a>
-				<a href="#" class="text-primary">Sign up</a>
+				<a href="#" class="text-primary ml-2">Sign up</a>
 			</div>
 
 			<header>
@@ -59,8 +59,8 @@
 				</div>
 			</div>
 
-			<div>
-				<div class="bg-secondary-100 text-secondary-200">Load more</div>
+			<div class="flex justify-center">
+				<div class="bg-secondary-100 text-secondary-200 p-2">Load more</div>
 			</div>
 		</main>
 	</div>
