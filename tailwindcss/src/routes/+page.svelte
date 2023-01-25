@@ -1,4 +1,4 @@
-<body class="text-gray-600 font-body">
+<body class="text-gray-600 bg-white font-body">
 	<div class="grid grid-cols-3">
 		<div class="grid grid-cols-1">
 			<nav>
@@ -29,8 +29,8 @@
 
 		<main class="px-16 py-6 bg-gray-200 col-span-2">
 			<div class="flex justify-center md:justify-end">
-				<a href="#" class="text-primary">Log in</a>
-				<a href="#" class="text-primary ml-2">Sign up</a>
+				<a href="#" class="text-primary btn btn-outline">Log in</a>
+				<a href="#" class="text-primary ml-2 btn btn-outline">Sign up</a>
 			</div>
 
 			<header>
@@ -92,7 +92,7 @@
 			</div>
 
 			<div class="mt-12 flex justify-center">
-				<div class="bg-secondary-100 text-secondary-200">Load more</div>
+				<div class="bg-secondary-100 text-secondary-200 btn tracking-wider">Load more</div>
 			</div>
 		</main>
 	</div>

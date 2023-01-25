@@ -2,4 +2,8 @@
 	import '../app.css';
 </script>
 
-<slot />
+<html dir="auto">
+	<body class="bg-base-100">
+		<slot />
+	</body>
+</html>
